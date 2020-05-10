@@ -1,0 +1,53 @@
+Deklaration:
+
+Man sagt dem Compiler, dass es etwas gibt.
+
+Beispiel: 
+float fract(float num);
+
+Dem Compiler wird gesagt, es existiert eine Funktion fract, die einen float zurückgibt
+und als Parameter einen float entgegen nimmt.
+
+
+Definition:
+
+Man sagt dem Compiler, dass an dieser Stelle etwas angelegt werden soll.
+
+Beispiel: 
+float fract(float num) {
+    ...
+}
+
+Der Compiler weiss nun, dass die bekannte Funktion fract 
+(bekannt, weil jede Definition auch in gewisser Weise eine Deklaration ist)
+, genau so aussieht; ...
+
+
+Unterschiede:
+
+Beim Deklarieren weiss der Compiler noch nicht was die Funktion macht.
+Er weiss nur, dass es sie gibt.
+Beim Definieren wird dem Compiler gleichzeitig gesagt, wie die Funktion aussieht.
+
+
+
+Beispiel Funktion:
+siehe oben unter Beispiele:
+
+
+Beispiel Variable:
+
+Deklaration: mit extern
+extern int i;
+
+Definition:
+extern int i = 1;
+
+
+Beispiel Klasse:
+
+Deklaration: ähnlich zur Funktion
+class test;
+
+Definition: ähnlich zur Funktion
+class test{...};

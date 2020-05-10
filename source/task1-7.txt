@@ -1,0 +1,42 @@
+gegebener Quellcode:
+
+#include <iostream>
+
+int var = 3;
+
+double sum(double a, double b){
+    return a + b;
+}
+
+int square(int var){
+    return var * var;
+}
+
+int main(){
+    for(int i = 0; i != 100; ++i){
+        std::cout << "i^2 = " << square(i) << "\n";
+        std::cout << "i+i = " << sum(i, i) << "\n";
+    }
+    return 0;
+}
+
+Signatur einer Funktion: Rückgabewert und Paramater
+
+Beispiele aus Quellcode:
+
+double --- (double a, double b)
+int --- (int var)
+main()
+
+
+Gültigkeitsbereiche:
+
+var ist nicht in einer Funktion initialisiert, das heisst es ist im gesamten Programm
+gültig und kann aufgerufen werden.
+
+die double a und b sind in einer Funktion als Parameter übergebene Variablen und somit
+nur in dieser Funktion gültig.
+
+in square wird lediglich var als Parameter übergeben, das verändert aber nichts am Wert von var.
+
+in der main wird ein i initialisiert, dieses i ist also auch nur in der main gültig.

@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11  -rdynamic CMakeFiles/divideby1to20.dir/divideby1to20.cpp.o  -o divideby1to20 

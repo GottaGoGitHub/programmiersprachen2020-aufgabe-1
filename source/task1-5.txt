@@ -1,0 +1,18 @@
+Initialisierung setzt einen Wert einer Variablen beim erstellen dieser.
+
+Beispiele:
+int a = 10;
+
+int b; -> ohne '=' wird der default value für den jeweiligen Typ verwendet.
+Bei int wäre das 0.
+
+Zuweisung tut einer bereits initialisierten Variablen einen neuen Wert zuweisen.
+
+Beispiel:
+int c; <- Initialisierung
+c = 20; <- Zuweisung
+
+Unterschied:
+Initialisierungen sind pro Variable nur ein mal möglich! 
+Eine Neuzuweisung kann erst erfolgen, nachdem eine Variable initialisiert wurde, ist dann
+aber beliebig oft durchführbar. (solgen die Variable nicht mit const initialisiert wurde!)

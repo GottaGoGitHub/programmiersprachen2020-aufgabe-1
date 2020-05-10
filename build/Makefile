@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named helloworld
 
 # Build rule for target.
@@ -124,17 +137,43 @@ helloworld/fast:
 .PHONY : helloworld/fast
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named divideby1to20
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+divideby1to20: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 divideby1to20
+.PHONY : divideby1to20
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+divideby1to20/fast:
+	$(MAKE) -f source/CMakeFiles/divideby1to20.dir/build.make source/CMakeFiles/divideby1to20.dir/build
+.PHONY : divideby1to20/fast
+
+#=============================================================================
+# Target rules for targets named task1-10
+
+# Build rule for target.
+task1-10: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task1-10
+.PHONY : task1-10
+
+# fast build rule for target.
+task1-10/fast:
+	$(MAKE) -f source/CMakeFiles/task1-10.dir/build.make source/CMakeFiles/task1-10.dir/build
+.PHONY : task1-10/fast
+
+#=============================================================================
+# Target rules for targets named mile_to_kilometer
+
+# Build rule for target.
+mile_to_kilometer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mile_to_kilometer
+.PHONY : mile_to_kilometer
+
+# fast build rule for target.
+mile_to_kilometer/fast:
+	$(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+.PHONY : mile_to_kilometer/fast
 
 # Help Target
 help:
@@ -144,8 +183,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... helloworld"
 	@echo "... tests"
+	@echo "... helloworld"
+	@echo "... divideby1to20"
+	@echo "... task1-10"
+	@echo "... mile_to_kilometer"
 .PHONY : help
 
 

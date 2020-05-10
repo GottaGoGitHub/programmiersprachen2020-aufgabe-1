@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/tests.dir/rule:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
+.PHONY : source/CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: source/CMakeFiles/tests.dir/rule
+
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+# Convenience name for target.
 source/CMakeFiles/helloworld.dir/rule:
 	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
 .PHONY : source/CMakeFiles/helloworld.dir/rule
@@ -126,19 +141,76 @@ helloworld/fast:
 .PHONY : helloworld/fast
 
 # Convenience name for target.
-source/CMakeFiles/tests.dir/rule:
-	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
-.PHONY : source/CMakeFiles/tests.dir/rule
+source/CMakeFiles/divideby1to20.dir/rule:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/divideby1to20.dir/rule
+.PHONY : source/CMakeFiles/divideby1to20.dir/rule
 
 # Convenience name for target.
-tests: source/CMakeFiles/tests.dir/rule
+divideby1to20: source/CMakeFiles/divideby1to20.dir/rule
 
-.PHONY : tests
+.PHONY : divideby1to20
 
 # fast build rule for target.
-tests/fast:
-	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+divideby1to20/fast:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/divideby1to20.dir/build.make source/CMakeFiles/divideby1to20.dir/build
+.PHONY : divideby1to20/fast
+
+# Convenience name for target.
+source/CMakeFiles/task1-10.dir/rule:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/task1-10.dir/rule
+.PHONY : source/CMakeFiles/task1-10.dir/rule
+
+# Convenience name for target.
+task1-10: source/CMakeFiles/task1-10.dir/rule
+
+.PHONY : task1-10
+
+# fast build rule for target.
+task1-10/fast:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/task1-10.dir/build.make source/CMakeFiles/task1-10.dir/build
+.PHONY : task1-10/fast
+
+# Convenience name for target.
+source/CMakeFiles/mile_to_kilometer.dir/rule:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/mile_to_kilometer.dir/rule
+.PHONY : source/CMakeFiles/mile_to_kilometer.dir/rule
+
+# Convenience name for target.
+mile_to_kilometer: source/CMakeFiles/mile_to_kilometer.dir/rule
+
+.PHONY : mile_to_kilometer
+
+# fast build rule for target.
+mile_to_kilometer/fast:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+.PHONY : mile_to_kilometer/fast
+
+divideby1to20.o: divideby1to20.cpp.o
+
+.PHONY : divideby1to20.o
+
+# target to build an object file
+divideby1to20.cpp.o:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/divideby1to20.dir/build.make source/CMakeFiles/divideby1to20.dir/divideby1to20.cpp.o
+.PHONY : divideby1to20.cpp.o
+
+divideby1to20.i: divideby1to20.cpp.i
+
+.PHONY : divideby1to20.i
+
+# target to preprocess a source file
+divideby1to20.cpp.i:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/divideby1to20.dir/build.make source/CMakeFiles/divideby1to20.dir/divideby1to20.cpp.i
+.PHONY : divideby1to20.cpp.i
+
+divideby1to20.s: divideby1to20.cpp.s
+
+.PHONY : divideby1to20.s
+
+# target to generate assembly for a file
+divideby1to20.cpp.s:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/divideby1to20.dir/build.make source/CMakeFiles/divideby1to20.dir/divideby1to20.cpp.s
+.PHONY : divideby1to20.cpp.s
 
 helloworld.o: helloworld.cpp.o
 
@@ -166,6 +238,60 @@ helloworld.s: helloworld.cpp.s
 helloworld.cpp.s:
 	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
+
+mile_to_kilometer.o: mile_to_kilometer.cpp.o
+
+.PHONY : mile_to_kilometer.o
+
+# target to build an object file
+mile_to_kilometer.cpp.o:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.o
+.PHONY : mile_to_kilometer.cpp.o
+
+mile_to_kilometer.i: mile_to_kilometer.cpp.i
+
+.PHONY : mile_to_kilometer.i
+
+# target to preprocess a source file
+mile_to_kilometer.cpp.i:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.i
+.PHONY : mile_to_kilometer.cpp.i
+
+mile_to_kilometer.s: mile_to_kilometer.cpp.s
+
+.PHONY : mile_to_kilometer.s
+
+# target to generate assembly for a file
+mile_to_kilometer.cpp.s:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.s
+.PHONY : mile_to_kilometer.cpp.s
+
+task1-10.o: task1-10.cpp.o
+
+.PHONY : task1-10.o
+
+# target to build an object file
+task1-10.cpp.o:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/task1-10.dir/build.make source/CMakeFiles/task1-10.dir/task1-10.cpp.o
+.PHONY : task1-10.cpp.o
+
+task1-10.i: task1-10.cpp.i
+
+.PHONY : task1-10.i
+
+# target to preprocess a source file
+task1-10.cpp.i:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/task1-10.dir/build.make source/CMakeFiles/task1-10.dir/task1-10.cpp.i
+.PHONY : task1-10.cpp.i
+
+task1-10.s: task1-10.cpp.s
+
+.PHONY : task1-10.s
+
+# target to generate assembly for a file
+task1-10.cpp.s:
+	cd /home/eric/Programmiersprachen_Uebung2020/programmiersprachen2020-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/task1-10.dir/build.make source/CMakeFiles/task1-10.dir/task1-10.cpp.s
+.PHONY : task1-10.cpp.s
 
 tests.o: tests.cpp.o
 
@@ -200,13 +326,25 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... helloworld"
 	@echo "... tests"
+	@echo "... rebuild_cache"
+	@echo "... helloworld"
+	@echo "... divideby1to20"
+	@echo "... task1-10"
+	@echo "... mile_to_kilometer"
+	@echo "... edit_cache"
+	@echo "... divideby1to20.o"
+	@echo "... divideby1to20.i"
+	@echo "... divideby1to20.s"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... mile_to_kilometer.o"
+	@echo "... mile_to_kilometer.i"
+	@echo "... mile_to_kilometer.s"
+	@echo "... task1-10.o"
+	@echo "... task1-10.i"
+	@echo "... task1-10.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
