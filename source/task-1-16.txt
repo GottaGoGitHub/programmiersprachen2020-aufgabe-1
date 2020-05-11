@@ -1,0 +1,31 @@
+Schluesselwoerter:
+
+C++ ist eine Programmiersprache, die als erweiterung von C entwickelt wurde. Sie ist effizient und maschienennah und bietet ein hohes Abstraktionsniveau.
+Quellcode ist eine in einer Programmiersprache verfasste Programmanweisung (anweisungen), die vom Menschen gelesen werden können, aber Maschienen erst mit einem Compiler übersetzen müssen.
+Compiler übersetzt Quellcode für Maschienen, um diesen vom Computer ausführbar zu machen. (Übersetzung in binärcode)
+Linker verweist auf Referenzen von Funktionen im Quellcode (z.B. printf)
+Objektcode ist eine Art Zwischenergebniss des Compiliervorgangs, der hauptsächlich aus Maschienencode besteht (.o Datei)
+Ausführbare Datei ist compilierter Code, der von Computer ausführbar ist
+main() braucht jedes c++ Programm um zu funktionieren, es ist das was beim ausführen als erstes ausgeführt wird
+#include ist ein Vorgang, der vom Präprozessor erledigt wird, bei dem gewisse Programmteile vorgeladen werden
+Kommentar ist eine oder mehrere Zeilen Code, die durch ein Kürzel vom Compiler ignoriert werden, und somit nicht ausführbar sind
+Header sind .hpp Dateien, die im Code mit include vorgeladen werden können
+Programm ist eine, in einer bestimmten Programmiersprache verfasste Abfolge von Anweisungen
+Ausgabe ist, was nach Ablauf eines Programms ausgegeben wird. Gibt das Programm nichts zurück (Berechnungen oder ähnliches) wird 0 returned, als Zeichen das das Prgramm beendet ist
+std::cout steht unter c++ für eine Ausgabe ähnlich wie print
+std::cin steht unter c++ für eine Nutzereingabe (Java Scanner)
+<< trennt unter cout Strings von Funktionsabfragen (Java +)
+>> input Operator (wie << ein Output Operator ist)
+Funktion ist im Prinzip nur ein Programmkonstrukt, dass es ermöglicht Code zu strukturieren, indem man ihn auf kleinere Fragmente aufteilt.
+Funktionssignatur ist unter c++ der Rückgabewert der Funktion und der/die notwendige zu übergebene Parameter
+Deklaration sagt dem Compiler, dass es etwas gibt (klasse, variable, funktion)
+Definition sagt dem Compiler, dass er hier etwas anlegen soll
+Typ; Dateitypen definieren die Art einer Variablen (Zahl, Wort, Buchstabe)
+Typkonvertierung ist das zuweisen eines neuen Dateityps auf eine bereits initialisierte Variable (double auf int z.b.)
+Variable ist eine Speicherzelle, in die man Werte schreiben kann
+Name einer Variable muss mit einem Buchstaben beginnen.
+Wert einer Variable muss zum zugehörigen Dateityp passen
+Initialisierung; jede Variable muss genau einmal initialisiert werden, indem ihr beim erstellen ein Wert zugewiesen wird. 
+Zuweisung ist wenn man einer bereits initialisierten Variable ein neuen Wert zuweist
+const ist ein keyword, dass beim initialisieren verwendet wird. Es sorgt dafür, dass man einer Variable keinen neuen Wert zuweisen kann
+Gültigkeitsbereich einer variable ist immer nur innerhalb zweier geschweifter Klammern
